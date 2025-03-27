@@ -6,3 +6,11 @@
 @import url("global/general.css");
 @import url("icons/icons.css");
 @import url("global/rounded-corners.css") (-moz-bool-pref: "fp.tweak.rounded-corners");
+/*居中书签栏（113后新版）：*/
+#PlacesToolbarItems{justify-content: center !important; }
+/*隐藏书签夹图标：*/
+/* Kill bookmark icons in the Personal Toolbar */
+toolbarbutton.bookmark-item > .toolbarbutton-icon {
+display: none !important;
+}
+
