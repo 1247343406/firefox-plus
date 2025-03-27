@@ -3,7 +3,7 @@
 	--tab-block-margin: 8px !important;
 	--tab-selected-bgcolor: var(--toolbar-bgcolor) !important;
 	& #TabsToolbar {
-		--tab-min-height: 32px !important;
+		--tab-min-height: 30px !important;
 		--inline-tab-padding: 11px !important;
 		--tab-border-radius: 8px !important;
 
@@ -145,16 +145,13 @@
 	z-index: 1;
 }
 
-.tabbrowser-tab:is([visuallyselected], [multiselected]):not([pinned]) {
-	min-width: 200px !important;
-	z-index: 1;
-}
+
 
 .tab-close-button {
 	width: 16px !important;
 	height: 16px !important;
 	padding: 4px !important;
-	border-radius: 4px !important;
+	border-radius: 8px !important;
 }
 
 .tab-throbber:not([pinned]),
@@ -316,7 +313,8 @@
 }
 .tab-group-label {
     tab-group[collapsed] > .tab-group-label-container > & {
-        opacity: 0.85 !important;
+        filter: grayscale(0.2);
+        opacity: 0.8 !important;
     }
   }
  
@@ -335,8 +333,7 @@
     .tab-group-label {
         margin-top: 14px !important;
         border-radius: 4px !important;
-        padding-inline: 4px !important;
-        font-size: 90% !important;
+        padding-inline: 4px !important
       }
 /* END:Tasb groups */
 toolbarbutton[part="scrollbutton-up"],
@@ -421,18 +418,18 @@ toolbarbutton[part="scrollbutton-down"] {
 	margin-top: var(--tab-block-margin) !important;
 }
 
-#tabbrowser-arrowscrollbox:not([overflowing]) .tabbrowser-tab:first-of-type {
-	margin-inline-start: 6px !important;
-}
+/* #tabbrowser-arrowscrollbox:not([overflowing]) .tabbrowser-tab:first-of-type {
+	margin-inline-start: 14px !important;
+}*/
 #tabbrowser-arrowscrollbox:not([overflowing]) .tabbrowser-tab:last-of-type {
 	margin-inline-end: 6px !important;
 }
- #tabbrowser-arrowscrollbox:not([overflowing]) tab-group[collapsed] .tabbrowser-tab:first-of-type {
+/*#tabbrowser-arrowscrollbox:not([overflowing]) tab-group .tabbrowser-tab:first-of-type {
 	margin-inline-start: 0px !important;
 }
-#tabbrowser-arrowscrollbox:not([overflowing]) tab-group[collapsed] .tabbrowser-tab:last-of-type {
+#tabbrowser-arrowscrollbox:not([overflowing]) tab-group .tabbrowser-tab:last-of-type {
 	margin-inline-end: 0px !important;
-}
+} */
 
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
 	> #tabbrowser-arrowscrollbox
