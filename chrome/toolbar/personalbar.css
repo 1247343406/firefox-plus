@@ -75,7 +75,7 @@ toolbarbutton.bookmark-item[open="true"] > .toolbarbutton-icon{
 @media (-moz-bool-pref: "fp.tweak.autohide-bookmarks") {
 #PersonalToolbar{
   --bookmarks-padding: 4px;
-  --autohide-toolbar-delay: 600ms;
+  --autohide-toolbar-delay: 300ms;
   --autohide-toolbar-focus-rotation: 0deg;
   --autohide-toolbar-hover-rotation: 0deg;
 }
@@ -121,7 +121,7 @@ toolbarbutton.bookmark-item[open="true"] > .toolbarbutton-icon{
 }
 #navigator-toolbox:hover >  #PersonalToolbar
 {
-  transition-delay: 800ms !important;
+  transition-delay: 300ms !important;
   transform: rotateX(var(--autohide-toolbar-hover-rotation,0)) !important;
 }
 
