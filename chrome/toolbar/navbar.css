@@ -1,7 +1,7 @@
 :root {
-  --toolbarbutton-border-radius: 4px !important;
-  --toolbarbutton-inner-padding: 7px !important;
-  --fp-toolbarbutton-inner-inline-padding: 12px !important;
+  --toolbarbutton-border-radius: 8px !important;
+  --toolbarbutton-inner-padding: 8px !important;
+  --fp-toolbarbutton-inner-inline-padding: 8px !important;
   --tabs-navbar-shadow-size: 0 !important;
 }
 
