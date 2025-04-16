@@ -1,66 +1,66 @@
-.titlebar-min {
+。titlebar-min {
 	list-style-image: url("win11-minimize.svg") !important;
 }
 
-.titlebar-max {
+。titlebar-max {
 	list-style-image: url("win11-maximize.svg") !important;
 }
 
-.titlebar-restore {
+。titlebar-restore {
 	list-style-image: url("win11-restore.svg") !important;
 }
 
-.titlebar-close {
+。titlebar-close {
 	list-style-image: url("win11-close.svg") !important;
 }
 
 @media (max-resolution: 1dppx) {
-	toolbar[brighttext] .titlebar-close,
-	.titlebar-close:hover {
+	toolbar[brighttext] 。titlebar-close,
+	。titlebar-close:hover {
 		list-style-image: url("win11-close-dark.svg") !important;
 	}
 }
 
 @media -moz-pref("fp.tweak.macos-button") {
-	.titlebar-min {
+	。titlebar-min {
 		list-style-image: url("mac-minimize.svg") !important;
 	}
-	.titlebar-close {
+	。titlebar-close {
 		margin-right: 4px !important;
 	}
-	.titlebar-max {
+	。titlebar-max {
 		list-style-image: url("mac-maximize.svg") !important;
 	}
 
-	.titlebar-restore {
+	。titlebar-restore {
 		list-style-image: url("mac-restore.svg") !important;
 	}
 
-	.titlebar-close {
+	。titlebar-close {
 		list-style-image: url("mac-close.svg") !important;
 	}
 	@media (max-resolution: 1dppx) {
-		toolbar[brighttext] .titlebar-close,
-		.titlebar-close:hover {
+		toolbar[brighttext] 。titlebar-close,
+		。titlebar-close:hover {
 			list-style-image: url("mac-close.svg") !important;
 		}
 	}
-    .titlebar-buttonbox {
+    。titlebar-buttonbox {
         margin: 0 8px !important;
     }
-	.titlebar-button {
+	。titlebar-button {
 		& > .toolbarbutton-icon {
 			width: 14px !important;
 			height: 14px !important;
 		}
 	}
-	.titlebar-button {
+	。titlebar-button {
 		padding: 0 4px !important;
 		filter: grayscale(1) brightness(6);
 		opacity: 0.25 !important;
 	}
 
-	#TabsToolbar:hover .titlebar-button {
+	#TabsToolbar:hover 。titlebar-button {
 		filter: grayscale(0) brightness(1);
 		opacity: 0.8 !important;
 	}
@@ -598,15 +598,15 @@
 
 /* tab sound icons */
 .tab-icon-overlay[soundplaying] {
-	list-style-image: url("tab-audio-playing-small.svg") !important;
+	list-style-image: url("media-unmute.svg") !important;
 }
 
 .tab-icon-overlay[muted] {
-	list-style-image: url("tab-audio-muted-small.svg") !important;
+	list-style-image: url("media-mute.svg") !important;
 }
 
 .tab-icon-overlay[activemedia-blocked] {
-	list-style-image: url("tab-audio-blocked-small.svg") !important;
+	list-style-image: url("autoplay-media.svg") !important;
 }
 
 /* reload/stop animation */
